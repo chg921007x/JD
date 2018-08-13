@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        ul {
+            width: 200px;
+            height: 200px;
+            margin: 100px auto;
+            border: 1px solid #000;
+            text-align: center;
+            position: relative;
+            transform: rotateX(-189deg) rotateY(238deg);
+            transform-style: preserve-3d;
+        }
+
+        ul li {
+            width: 200px;
+            height: 200px;
+            font-size: 20px;
+            line-height: 200px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        ul li:nth-child(1) {
+            background: red;
+            transform:translate(-100px,0) rotateY(90deg) ;
+
+        }
+
+        ul li:nth-child(2) {
+            background: blue;
+            transform: translate(100px,0) rotateY(90deg);
+        }
+
+        ul li:nth-child(3) {
+            background: blueviolet;
+            transform: translate(0,-100px) rotateX(90deg);
+        }
+
+        ul li:nth-child(4) {
+            background: gold;
+            transform: translate(0,100px) rotateX(90deg);
+        }
+
+        ul li:nth-child(5) {
+            background: pink;
+            transform: translateZ(100px);
+        }
+
+        ul li:nth-child(6) {
+            background: green;
+            transform: translateZ(-100px);
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+</ul>
+</body>
+</html>
